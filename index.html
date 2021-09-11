@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>
+</title>
+
+<style>
+
+body {margin : 0;
+	padding: 0;}
+
+	
+p {margin : 0;
+	padding: 0;}
+
+	
+section {padding: 0; margin: 0;}
+.content {
+	 width :100%;
+	height:100%;
+	padding : 0;
+	margin: 0;
+}
+
+
+#second { background: url("") no-repeat fixed center; 
+			background-size:contain;}
+			
+#third  { background: url(bgspace.png) no-repeat fixed; 
+			background-size:cover;}
+
+
+p {color: yellow;}
+
+#second {height:1200px;}
+
+#third {height:900px;}
+
+body {background-color: black;}
+
+#bgstar {
+background:url("space-star.png") repeat;}
+
+#bgstar-mid {
+background:url("space-star-mid.png") repeat;}
+
+
+
+</style>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    var   bgsc1 = 0;
+    var   bgsc2 = 0;
+	var   bgsc3 = 0;
+	var   bgsc4 = 0;
+
+setInterval(function() {
+    bgsc1 +=  0;
+    bgsc2 +=  -1;
+	bgsc3 +=  -0.5;
+	bgsc4 +=  -0.5;
+    $("#bgstar").css("background-position", bgsc1 + "px " + bgsc2 + "px");
+	$("#bgstar-mid").css("background-position", bgsc3 + "px " + bgsc4 + "px");
+});
+});
+</script>
+
+</head>
+
+<body>
+ <div id="bgstar" class="content2">
+<div id="bgstar-mid" class="content2">
+
+    <div id="second" class="content">
+	<img src="enlarge_logo_ai.png">
+	
+	</div>
+	
+	<div id="third" class="content">
+	
+    </div>
+	
+</div>
+</div>	
+	
+	
+</body>
+</html>
